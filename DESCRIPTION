@@ -11,3 +11,5 @@ Description: A convenience package that provides functions and packages
 Date: 2015-xx-xx
 Depends:
     arm
+Imports:
+    randtoolbox

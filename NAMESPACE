@@ -2,4 +2,6 @@
 
 export(jkcolours)
 export(lm_to_latex)
+export(make_MC_sample)
 export(prose_vector)
+importFrom(randtoolbox,sobol)
