@@ -23,3 +23,30 @@ prose_vector <- function(vals, oxford=FALSE, and="and") {
         return(vals)
     }
 }
+
+#' Converts a model formula to LaTeX code
+#'
+#' Converts the formula of a model object to LaTeX code for use in a
+#' knitr report or similar.
+#' 
+#' @param model a model object
+#' @param mathmode boolean indicating whether the formula will be
+#' displayed in math mode.  Default = false.
+#' @return a character string formatted for LaTeX (with knitr,
+#' i.e. multiple escapes).  Users can add mathmode or texttt as they
+#' wish from knitr.
+#' @export
+lm_to_latex <- function(model, mathmode=FALSE) {
+    f <- deparse(formula(model))
+
+    if (mathmode) {
+        f <- gsub("(.*)_(.*)", "\\1_{\\2}", f)
+        f <- gsub("~", "\\\\sim", f)        
+    } else {
+        f <- gsub("_", "\\\\_", f)
+        f <- gsub("~", "\\\\ensuremath{\\\\sim}", f)        
+    }
+    
+    return(f)
+}
+
