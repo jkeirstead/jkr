@@ -1,4 +1,4 @@
-Package: jkeirstead
+Package: jkr
 Maintainer: James Keirstead <james.keirstead@gmail.com>
 Author: James Keirstead <james.keirstead@gmail.com>
 Version: 0.1.0
@@ -8,7 +8,7 @@ Description: A convenience package that provides functions and packages
     frequently used by James Keirstead. Students and collaborators can load this
     package to common custom features that I use. The package does not force
     load common packages however (like ggplot2 or dplyr).
-Date: 2015-xx-xx
+Date: 2015-01-08
 Depends:
     arm
 Imports:
