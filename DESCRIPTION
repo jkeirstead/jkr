@@ -12,4 +12,5 @@ Date: 2015-xx-xx
 Depends:
     arm
 Imports:
-    randtoolbox
+    randtoolbox,
+    ggplot2
