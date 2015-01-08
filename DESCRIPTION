@@ -2,7 +2,7 @@ Package: jkeirstead
 Maintainer: James Keirstead <james.keirstead@gmail.com>
 Author: James Keirstead <james.keirstead@gmail.com>
 Version: 0.1.0
-License: GPL-3
+License: MIT + file LICENSE
 Title: Functions and packages frequently used by James Keirstead
 Description: A convenience package that provides functions and packages
     frequently used by James Keirstead. Students and collaborators can load this
