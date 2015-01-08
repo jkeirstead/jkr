@@ -1,0 +1,17 @@
+jkr 0.1.0 (2015-01-08)
+---------------
+
+* initial release
+
+* Plotting: provides `theme_schematic()` for simple plots and
+  `jkcolours` for frequently used plotting colours
+
+* Modelling: `make_MC_sample()` for efficient Monte Carlo
+  sample generation with Sobol' sequences
+
+* Strings: provides `lm_to_latex()` and `prose_vector()` for
+  formatting objects for knitr reports.
+
+* Other: `find_columns()` to locate data frames or lists with named
+  columns or entries.
+
